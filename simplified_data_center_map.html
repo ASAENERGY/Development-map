@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_398528089b887249f6cdde2beadb927f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_398528089b887249f6cdde2beadb927f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_398528089b887249f6cdde2beadb927f = L.map(
+                "map_398528089b887249f6cdde2beadb927f",
+                {
+                    center: [49.2827, -123.1207],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0417a7436d8a902b8221c9b86b9fb107 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_398528089b887249f6cdde2beadb927f);
+        
+    
+            var marker_7ac2ca53b04da3c4b6aa7d0a4a0202fd = L.marker(
+                [49.498889, -115.350556],
+                {}
+            ).addTo(map_398528089b887249f6cdde2beadb927f);
+        
+    
+            var icon_47af2b58c443b1749bc8eca09a3d1384 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7ac2ca53b04da3c4b6aa7d0a4a0202fd.setIcon(icon_47af2b58c443b1749bc8eca09a3d1384);
+        
+    
+        var popup_4feae68f15c8f22fff23cc6571fb4f1a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff70d9911e963bbf5e9b349f74c82319 = $(`<div id="html_ff70d9911e963bbf5e9b349f74c82319" style="width: 100.0%; height: 100.0%;">     <b>Aberfeldie Power Hub</b><br>     Capacity: 25.0 MW     </div>`)[0];
+            popup_4feae68f15c8f22fff23cc6571fb4f1a.setContent(html_ff70d9911e963bbf5e9b349f74c82319);
+        
+
+        marker_7ac2ca53b04da3c4b6aa7d0a4a0202fd.bindPopup(popup_4feae68f15c8f22fff23cc6571fb4f1a)
+        ;
+
+        
+    
+    
+            var marker_487a583b80f7b624ed91b64f77a23b20 = L.marker(
+                [49.375, -125.153333],
+                {}
+            ).addTo(map_398528089b887249f6cdde2beadb927f);
+        
+    
+            var icon_b389679e4855f2a53fd4cc07980a53f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_487a583b80f7b624ed91b64f77a23b20.setIcon(icon_b389679e4855f2a53fd4cc07980a53f4);
+        
+    
+        var popup_8ad98c280992c2280c738e9436089750 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0eb2af4ae77eb93061a235c35fecf35e = $(`<div id="html_0eb2af4ae77eb93061a235c35fecf35e" style="width: 100.0%; height: 100.0%;">     <b>Ash River Facility</b><br>     Capacity: 28.0 MW     </div>`)[0];
+            popup_8ad98c280992c2280c738e9436089750.setContent(html_0eb2af4ae77eb93061a235c35fecf35e);
+        
+
+        marker_487a583b80f7b624ed91b64f77a23b20.bindPopup(popup_8ad98c280992c2280c738e9436089750)
+        ;
+
+        
+    
+    
+            var marker_786cd726c49623c8f528954a92cf21b6 = L.marker(
+                [49.711389, -123.535278],
+                {}
+            ).addTo(map_398528089b887249f6cdde2beadb927f);
+        
+    
+            var icon_d13fa090781980a981ce5736535a3ec8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_786cd726c49623c8f528954a92cf21b6.setIcon(icon_d13fa090781980a981ce5736535a3ec8);
+        
+    
+        var popup_5862c31359e0f283022ceb36b403cca2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_34892522559054d33749948e1c638911 = $(`<div id="html_34892522559054d33749948e1c638911" style="width: 100.0%; height: 100.0%;">     <b>Clowhom Energy Center</b><br>     Capacity: 33.0 MW     </div>`)[0];
+            popup_5862c31359e0f283022ceb36b403cca2.setContent(html_34892522559054d33749948e1c638911);
+        
+
+        marker_786cd726c49623c8f528954a92cf21b6.bindPopup(popup_5862c31359e0f283022ceb36b403cca2)
+        ;
+
+        
+    
+    
+            var marker_24dfc20d7911667d87bca4c1354a2502 = L.marker(
+                [50.043056, -125.310556],
+                {}
+            ).addTo(map_398528089b887249f6cdde2beadb927f);
+        
+    
+            var icon_ddcc127612ba06aaa781d435f8fa354c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_24dfc20d7911667d87bca4c1354a2502.setIcon(icon_ddcc127612ba06aaa781d435f8fa354c);
+        
+    
+        var popup_c028af1f21345ef23eeea7603e1c6649 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f6d42df89a8c9b1c0a10d16bf6624fc = $(`<div id="html_1f6d42df89a8c9b1c0a10d16bf6624fc" style="width: 100.0%; height: 100.0%;">     <b>John Hart Complex</b><br>     Capacity: 138.0 MW     </div>`)[0];
+            popup_c028af1f21345ef23eeea7603e1c6649.setContent(html_1f6d42df89a8c9b1c0a10d16bf6624fc);
+        
+
+        marker_24dfc20d7911667d87bca4c1354a2502.bindPopup(popup_c028af1f21345ef23eeea7603e1c6649)
+        ;
+
+        
+    
+    
+            var marker_135ae5edfa576ab6aa9f0796b19cc3cd = L.marker(
+                [48.476944, -123.9975],
+                {}
+            ).addTo(map_398528089b887249f6cdde2beadb927f);
+        
+    
+            var icon_511255b586ee921ad2387b69ab9e7bb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_135ae5edfa576ab6aa9f0796b19cc3cd.setIcon(icon_511255b586ee921ad2387b69ab9e7bb4);
+        
+    
+        var popup_5bd72a0d361ef5fd9ecd509d8c1fcdd2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ffb782ba53be054999d15cba5ddbe9ad = $(`<div id="html_ffb782ba53be054999d15cba5ddbe9ad" style="width: 100.0%; height: 100.0%;">     <b>Jordan River Station</b><br>     Capacity: 170.0 MW     </div>`)[0];
+            popup_5bd72a0d361ef5fd9ecd509d8c1fcdd2.setContent(html_ffb782ba53be054999d15cba5ddbe9ad);
+        
+
+        marker_135ae5edfa576ab6aa9f0796b19cc3cd.bindPopup(popup_5bd72a0d361ef5fd9ecd509d8c1fcdd2)
+        ;
+
+        
+    
+    
+            var marker_05044eaf727e03dba9bc25568f4ebbb7 = L.marker(
+                [50.014722, -125.390833],
+                {}
+            ).addTo(map_398528089b887249f6cdde2beadb927f);
+        
+    
+            var icon_5f23cd02df05da25026f5bd571d6a6d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_05044eaf727e03dba9bc25568f4ebbb7.setIcon(icon_5f23cd02df05da25026f5bd571d6a6d9);
+        
+    
+        var popup_267af7cf5b40ea1f2e6e0e9e72cff952 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ca12df1de7c948f3dfaca93a1ad4f90 = $(`<div id="html_4ca12df1de7c948f3dfaca93a1ad4f90" style="width: 100.0%; height: 100.0%;">     <b>Ladore Site</b><br>     Capacity: 47.0 MW     </div>`)[0];
+            popup_267af7cf5b40ea1f2e6e0e9e72cff952.setContent(html_4ca12df1de7c948f3dfaca93a1ad4f90);
+        
+
+        marker_05044eaf727e03dba9bc25568f4ebbb7.bindPopup(popup_267af7cf5b40ea1f2e6e0e9e72cff952)
+        ;
+
+        
+    
+    
+            var marker_240a5de6184188a13305f7a2fd463a8b = L.marker(
+                [50.837222, -122.858056],
+                {}
+            ).addTo(map_398528089b887249f6cdde2beadb927f);
+        
+    
+            var icon_59702f9fd085e66cb286f3d6a7767788 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_240a5de6184188a13305f7a2fd463a8b.setIcon(icon_59702f9fd085e66cb286f3d6a7767788);
+        
+    
+        var popup_abec02af93715365da4643be434e38cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_caab86f45fc0ac53333fc9efd6f6ef41 = $(`<div id="html_caab86f45fc0ac53333fc9efd6f6ef41" style="width: 100.0%; height: 100.0%;">     <b>La Joie Station</b><br>     Capacity: 25.0 MW     </div>`)[0];
+            popup_abec02af93715365da4643be434e38cc.setContent(html_caab86f45fc0ac53333fc9efd6f6ef41);
+        
+
+        marker_240a5de6184188a13305f7a2fd463a8b.bindPopup(popup_abec02af93715365da4643be434e38cc)
+        ;
+
+        
+    
+    
+            var marker_3f26befddc38cd811c28eddda94e8b6a = L.marker(
+                [49.375, -122.868611],
+                {}
+            ).addTo(map_398528089b887249f6cdde2beadb927f);
+        
+    
+            var icon_75b24570c5d4c828a8bb5d914e08fcf0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3f26befddc38cd811c28eddda94e8b6a.setIcon(icon_75b24570c5d4c828a8bb5d914e08fcf0);
+        
+    
+        var popup_91fe6f6695292c31a52c2b059f413e99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bde2503fd17f538a75be51141c48305d = $(`<div id="html_bde2503fd17f538a75be51141c48305d" style="width: 100.0%; height: 100.0%;">     <b>Lake Buntzen Reserve</b><br>     Capacity: 76.8 MW     </div>`)[0];
+            popup_91fe6f6695292c31a52c2b059f413e99.setContent(html_bde2503fd17f538a75be51141c48305d);
+        
+
+        marker_3f26befddc38cd811c28eddda94e8b6a.bindPopup(popup_91fe6f6695292c31a52c2b059f413e99)
+        ;
+
+        
+    
+    
+            var marker_99402a7126d6e17b1cede4d265ccbadb = L.marker(
+                [49.6875, -125.034167],
+                {}
+            ).addTo(map_398528089b887249f6cdde2beadb927f);
+        
+    
+            var icon_b056e3b7aa8f71bea287bc7e8d14f6c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_99402a7126d6e17b1cede4d265ccbadb.setIcon(icon_b056e3b7aa8f71bea287bc7e8d14f6c4);
+        
+    
+        var popup_bd1a3ef04201aefdaa28a688f97fcbfa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_beafe3230d1558263120e4e535cd1e22 = $(`<div id="html_beafe3230d1558263120e4e535cd1e22" style="width: 100.0%; height: 100.0%;">     <b>Puntledge Plant</b><br>     Capacity: 24.0 MW     </div>`)[0];
+            popup_bd1a3ef04201aefdaa28a688f97fcbfa.setContent(html_beafe3230d1558263120e4e535cd1e22);
+        
+
+        marker_99402a7126d6e17b1cede4d265ccbadb.bindPopup(popup_bd1a3ef04201aefdaa28a688f97fcbfa)
+        ;
+
+        
+    
+    
+            var marker_13e36c5175cd4ef0dc0f8ef1aeba46e8 = L.marker(
+                [49.195278, -122.407778],
+                {}
+            ).addTo(map_398528089b887249f6cdde2beadb927f);
+        
+    
+            var icon_4e6069cd222f60287839c58f2161682d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_13e36c5175cd4ef0dc0f8ef1aeba46e8.setIcon(icon_4e6069cd222f60287839c58f2161682d);
+        
+    
+        var popup_d208000cff35575563f24e22b2bbf2ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_361b2f3eeaab979e99243d3d9a77d6f1 = $(`<div id="html_361b2f3eeaab979e99243d3d9a77d6f1" style="width: 100.0%; height: 100.0%;">     <b>Ruskin Power Node</b><br>     Capacity: 105.0 MW     </div>`)[0];
+            popup_d208000cff35575563f24e22b2bbf2ec.setContent(html_361b2f3eeaab979e99243d3d9a77d6f1);
+        
+
+        marker_13e36c5175cd4ef0dc0f8ef1aeba46e8.bindPopup(popup_d208000cff35575563f24e22b2bbf2ec)
+        ;
+
+        
+    
+    
+            var marker_21a4ae4c32e2620880edc781d6b5ca3e = L.marker(
+                [50.673056, -121.924167],
+                {}
+            ).addTo(map_398528089b887249f6cdde2beadb927f);
+        
+    
+            var icon_0a947db03ce4a1ad3f05cec24a182524 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_21a4ae4c32e2620880edc781d6b5ca3e.setIcon(icon_0a947db03ce4a1ad3f05cec24a182524);
+        
+    
+        var popup_5c6a00b140c251bfde907dcd223a751d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_101978de5fec95242ab19e85b6eca472 = $(`<div id="html_101978de5fec95242ab19e85b6eca472" style="width: 100.0%; height: 100.0%;">     <b>Seton Facility</b><br>     Capacity: 48.0 MW     </div>`)[0];
+            popup_5c6a00b140c251bfde907dcd223a751d.setContent(html_101978de5fec95242ab19e85b6eca472);
+        
+
+        marker_21a4ae4c32e2620880edc781d6b5ca3e.bindPopup(popup_5c6a00b140c251bfde907dcd223a751d)
+        ;
+
+        
+    
+    
+            var marker_be6bb6c09f385d15acfd7ea7e396dbc2 = L.marker(
+                [49.229444, -122.354722],
+                {}
+            ).addTo(map_398528089b887249f6cdde2beadb927f);
+        
+    
+            var icon_c2f0ec7fc213287c014db6ad60608a87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_be6bb6c09f385d15acfd7ea7e396dbc2.setIcon(icon_c2f0ec7fc213287c014db6ad60608a87);
+        
+    
+        var popup_cc4eae4737d91118b884d8d67d5f33cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63876b3c3e5ddb5b642a51038634a443 = $(`<div id="html_63876b3c3e5ddb5b642a51038634a443" style="width: 100.0%; height: 100.0%;">     <b>Stave Falls Hub</b><br>     Capacity: 91.0 MW     </div>`)[0];
+            popup_cc4eae4737d91118b884d8d67d5f33cf.setContent(html_63876b3c3e5ddb5b642a51038634a443);
+        
+
+        marker_be6bb6c09f385d15acfd7ea7e396dbc2.bindPopup(popup_cc4eae4737d91118b884d8d67d5f33cf)
+        ;
+
+        
+    
+    
+            var marker_97760839bee59ba5ff4d735cafe54a6b = L.marker(
+                [49.996667, -125.065556],
+                {}
+            ).addTo(map_398528089b887249f6cdde2beadb927f);
+        
+    
+            var icon_db1e89c08fc5a999a24c5aaac66f45e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_97760839bee59ba5ff4d735cafe54a6b.setIcon(icon_db1e89c08fc5a999a24c5aaac66f45e9);
+        
+    
+        var popup_9e236e7c0f4cca6fd7a9faab0e658075 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3e8c74b53392dbe140c3ea9ac747df4 = $(`<div id="html_d3e8c74b53392dbe140c3ea9ac747df4" style="width: 100.0%; height: 100.0%;">     <b>Strathcona Development</b><br>     Capacity: 64.0 MW     </div>`)[0];
+            popup_9e236e7c0f4cca6fd7a9faab0e658075.setContent(html_d3e8c74b53392dbe140c3ea9ac747df4);
+        
+
+        marker_97760839bee59ba5ff4d735cafe54a6b.bindPopup(popup_9e236e7c0f4cca6fd7a9faab0e658075)
+        ;
+
+        
+    
+    
+            var marker_1f131ea744a790751dc4ca5239d21e2b = L.marker(
+                [49.250278, -121.605556],
+                {}
+            ).addTo(map_398528089b887249f6cdde2beadb927f);
+        
+    
+            var icon_fa274e7d4853773544969bad1b633258 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1f131ea744a790751dc4ca5239d21e2b.setIcon(icon_fa274e7d4853773544969bad1b633258);
+        
+    
+        var popup_5bd81d3b1d8e18a5f99e98177da95b98 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fbef838abfca9efb375809561876bf1b = $(`<div id="html_fbef838abfca9efb375809561876bf1b" style="width: 100.0%; height: 100.0%;">     <b>Wahleach Project</b><br>     Capacity: 65.0 MW     </div>`)[0];
+            popup_5bd81d3b1d8e18a5f99e98177da95b98.setContent(html_fbef838abfca9efb375809561876bf1b);
+        
+
+        marker_1f131ea744a790751dc4ca5239d21e2b.bindPopup(popup_5bd81d3b1d8e18a5f99e98177da95b98)
+        ;
+
+        
+    
+    
+            var marker_6ad73681b77ce768038b0436c12457c3 = L.marker(
+                [49.916389, -118.116667],
+                {}
+            ).addTo(map_398528089b887249f6cdde2beadb927f);
+        
+    
+            var icon_b2744ae1f2abc969cff0cbb4ab1c7254 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6ad73681b77ce768038b0436c12457c3.setIcon(icon_b2744ae1f2abc969cff0cbb4ab1c7254);
+        
+    
+        var popup_b9ecefd356f45ae4693d1f13813c9e68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36e263dab72d894d90aef74ec37e6b6b = $(`<div id="html_36e263dab72d894d90aef74ec37e6b6b" style="width: 100.0%; height: 100.0%;">     <b>Whatshan Station</b><br>     Capacity: 55.0 MW     </div>`)[0];
+            popup_b9ecefd356f45ae4693d1f13813c9e68.setContent(html_36e263dab72d894d90aef74ec37e6b6b);
+        
+
+        marker_6ad73681b77ce768038b0436c12457c3.bindPopup(popup_b9ecefd356f45ae4693d1f13813c9e68)
+        ;
+
+        
+    
+    
+            var marker_0ddab9ed0fb5d65cda84e11926348412 = L.marker(
+                [49.835556, -124.520556],
+                {}
+            ).addTo(map_398528089b887249f6cdde2beadb927f);
+        
+    
+            var icon_cbac923d648ac9f3bf9e2b546d562abc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0ddab9ed0fb5d65cda84e11926348412.setIcon(icon_cbac923d648ac9f3bf9e2b546d562abc);
+        
+    
+        var popup_ebc5092c834c4a0209ca604cf9874fde = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65564e7b79c9bd33819f1a9a7d2c487a = $(`<div id="html_65564e7b79c9bd33819f1a9a7d2c487a" style="width: 100.0%; height: 100.0%;">     <b>Powell River Plant</b><br>     Capacity: 76.0 MW     </div>`)[0];
+            popup_ebc5092c834c4a0209ca604cf9874fde.setContent(html_65564e7b79c9bd33819f1a9a7d2c487a);
+        
+
+        marker_0ddab9ed0fb5d65cda84e11926348412.bindPopup(popup_ebc5092c834c4a0209ca604cf9874fde)
+        ;
+
+        
+    
+</script>
+</html>
